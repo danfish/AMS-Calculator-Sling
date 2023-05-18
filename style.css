@@ -1,0 +1,80 @@
+/* THIS IS TO IMPORT STYLES ALREADY EXISTING ON THE WEBSITE, SHOULDN'T BE REQUIRED WHEN COPIED OVER */
+.ams-calculator-wrapper {
+    --e-global-color-primary: #032368;
+    --e-global-color-secondary: #F08100;
+    --e-global-color-text: #30303A;
+    --e-global-typography-text-font-size: 15px;
+    --e-global-typography-text-font-family: "Montserrat";
+    font-family: var(--e-global-typography-text-font-family);
+    line-height: 20px;
+  }
+  /*--------------------------------------------------------------------------------------------------*/
+  /* Copy everything below this comment */
+  /*--------------------------------------------------------------------------------------------------*/
+  
+  .ams-calculator-wrapper {
+    --form-spacing: 16px;
+    --group-spacing: 8px;
+    --field-color: #E9EAEF;
+  }
+  
+  .ams-calculator fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: var(--form-spacing);
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    border: none;
+    min-inline-size: min-content;
+  }
+  
+  .ams-calculator legend {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .ams-calculator__group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--group-spacing);
+  }
+  
+  .ams-calculator label {
+    font-weight: 500;
+    color: var(--e-global-color-primary);
+  }
+  
+  .ams-calculator input {
+    padding: 0.8em 1.2em;
+    border: none;
+    background-color: var(--field-color);
+    color: var(--e-global-color-primary);
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 500;
+    outline: 2px solid transparent;
+    transition: outline 0.2s ease;
+    -webkit-transition: outline 0.2s ease;
+    -moz-transition: outline 0.2s ease;
+    -o-transition: outline 0.2s ease;
+  }
+  
+  .ams-calculator input:focus {
+    border-radius: 0;
+    outline: 2px solid var(--e-global-color-secondary);
+  }
+  
+  .ams-calculator input[readonly] {
+    font-weight: 800;
+    background-color: #6B6B76;
+    color: #fff;
+    cursor: not-allowed;
+  }
+  
+  .ams-calculator input[readonly]:focus {
+    outline: none;
+  }
