@@ -78,3 +78,6 @@
   .ams-calculator input[readonly]:focus {
     outline: none;
   }
+.TurningMoment {
+  display: none; 
+}
